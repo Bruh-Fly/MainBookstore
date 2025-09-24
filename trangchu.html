@@ -1,0 +1,72 @@
+  <!DOCTYPE html>
+  <html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <title>Thanh Menu</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="logo"><img src="images/living-word-christian-church.png.webp" alt="logoweb" id="logoweb"></div>
+      <nav class="menu">
+        <a href="#">Who We Are</a>
+        <a href="#">Location</a>
+        <a href="#">Minitries</a>
+        <a href="#">Music</a>
+        <a href="#">Videos</a>
+        <a href="#">Events</a>
+        <a href="#">Contact</a>
+        <a id="donate" href="#">Give</a>
+
+      </nav>
+    </header>
+
+    <div class="iconbutton">
+      <p class="search"><img src="images/icons8_search_30px.png"></p>
+      <button class="cart"><img src="images/icons8_shopping_cart_64px.png"><span>0 VND</span></button>
+      <a class="account" href="account.html"><img src="images/icons8_account_32px_1.png"></a>
+    </div>
+
+    <div id="centertext">
+      <a>Online BookStore</a>
+      <h1>Living Word eBook</h1>
+      <button class="browsebook">Browse Books</button>
+    </div>
+    <div class="toamazon">
+    <a href="https://www.amazon.com/Enough-Learn-How-Be-Content-ebook/dp/B0DWJDBP8Y/" target="_blank">
+                  <div class="linkto">
+                  <img src="..\images\Enough-is-Enough-min-pbg9aalaeusgykbnbjb9oty3cwtj0f6ewdhepnjn40 copy.png" alt="anh" id="imagebook">
+                  </div>
+    </a>
+                      <p id="noteto">Enough is Enough Kindle</p>
+                      <p id="noteto2">Note: You will be redirected to AMAZON website</p>
+
+                      <h1>Danh sách sản phẩm</h1>
+                      <div id="sanpham"></div>
+                      <script>
+  fetch('http://localhost:3000/products')                    
+                    .then(res => res.json())
+                        .then(data => {
+                          const container = document.getElementById('sanpham');
+                          data.forEach(sp => {
+                            container.innerHTML += `
+                          <div style="border:1px solid #ccc; padding:10px; margin:10px;">
+            <h2>${sp.ten}</h2>
+            <p><strong>Tác giả:</strong> ${sp.tacGia}</p>
+            <p><strong>Mô tả:</strong> ${sp.moTa}</p>
+            <p><strong>Giá:</strong> ${sp.gia.toLocaleString()} VND</p>
+            <p><strong>Số lượng còn:</strong> ${sp.soLuong}</p>
+            <img src="images/${sp.hinhAnh}" width="150"/>
+                              </div>
+                              `;
+                          });
+                        });
+                      </script>
+                        </div>
+
+    </div>
+  </body>
+  </html>
