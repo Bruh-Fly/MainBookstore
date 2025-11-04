@@ -10,13 +10,11 @@ body {
 .navbar {
   position: relative;
   top: 0;
-  width: 120%;
   height: 40px;
   display: flex;
   padding: 20px;
   align-items: center;
   justify-content:center;
-  z-index: 1000;
   background: transparent;
   background-size: cover;                    /* phủ kín */
   background-position: center;               /* căn giữa */
@@ -27,6 +25,7 @@ body {
 .menu {
   display: flex;
   gap: 30px;
+  margin-left: 100px
 }
 
 

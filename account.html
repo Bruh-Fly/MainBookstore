@@ -11,7 +11,7 @@
         <!--Thanh menu-->
         <header class="navbar">
             <div class="logo">
-                <img src="images/living-word-christian-church.png.webp"><a href="trangchu.html"></a></div>
+                <a href="trangchu.html"><img src="images/living-word-christian-church.png.webp"></a></div>
                 <nav class="menu">
                     <a href="#">Who we are</a>
                     <a href="#">Location</a>
@@ -26,9 +26,9 @@
 
                     <!--3 chuc nang tim kiem, gio hang, account-->
                     <div class="iconsright">
-                    <p ><img src="images/icons8_search_30px.png" alt="search" id="search"></p>
-                    <button type="button" id="cart"><img src="images/icons8_shopping_cart_64px.png" alt="cart" ><pan>0 VND</pan></button>
-                    <p><img src="images/icons8_account_32px_1.png" alt="account" id="account"></p>
+                    <a><img src="images/icons8_search_30px.png" alt="search" class="searchandaccount"></a>
+                    <a><button type="button" id="cart"><img src="images/icons8_shopping_cart_64px.png" alt="cart" ><pan>0 VND</pan></button></a>
+                    <a href="account.html"><img src="images/icons8_account_32px_1.png" alt="account" class="searchandaccount"></a>
                     </div>
             </div>
 
@@ -39,32 +39,57 @@
         <span id="myaccountpage">My account</span>
     </div>
         </div>
-        
+
+        <!--Thông báo lỗi nếu trùng tài khoản-->
+         <div id="errorBox" class="error-box" style="display: none"></div>
+
+        <script>
+            const params = new URLSearchParams(window.location.search);
+            if(params.get('error')=== 'invalid')
+            {
+                document.getElementById('errorBox').textContent= 'Lỗi: Một tài khoản đã được đăng kí với email này. Hãy đăng nhập hoặc sử dụng email khác'
+                document.getElementById('errorBox').style.display='block';
+               
+            }
+            </script>
         <div class="centertext">
             <p id="content">My Account</p>
         </div>
         
         <div class="accountlog">
+            
             <!--FOrm dang nhap-->
             <div class="loginform">
+                <form action="http://localhost:3019/login" method = "post">
             <p class="headbox">Login</p>
             <p>Username or email address <span class="sao">*</span></p>
-                <input type="text" class="box">
+                <input type="text" class="box" name="emaillogin" required>
             <p>Password <span class="sao">*</span></p>
-            <input type="password" class="boxp">
+            <input type="password" class="boxp" name="passwordlogin" required>
             <br><br><input type="checkbox" id="checkbox" alt="Nhớ thông tin"><span id="remember"> Remember me</span>
-            <br><button id="buttonlogin">Log in</button>
+            <br><button id="buttonlogin" type="submit">Log in</button>
             <br><br>
             <a href="#" id="forgetpass">Lost your password?</a>
+            </form>
             </div>
             <!--form dang ky-->
             <div class="registerform">
-                <form action="/post" method="post">
+                <form action="http://localhost:3019/register" method="post">
+                   
                 <p class="headbox" id="register">Register</p>
+                <!--Điền email đăng kí-->
                 <p id="emailcontent" >Email address<span class=sao>*</span></p>
-                <input type="text" class="box" id="twondboxuser" name="emailregister" required>
+                <input type="email" class="box" id="twondboxuser" name="emailregister" required>
+                <!--Mật khẩu đăng kí-->
                 <p id="passwordcontent" >Password <span class="sao">*</span></p>
                 <input type="password" class="boxp" id="twondpasswordbox" name="passwordregister" required>
+                <!--Kiểm tra độ mạnh của mật khẩu-->
+                <div id="domanhmatkhau">
+
+                </div>
+                <script src="js/account.js">
+
+                </script>
                 <p id="note">Your personal data will be used to support your experience throughout this website,<br> to manage access to your account, and for other purposes described in our<br><a href="#" id="policy">privacy policy.</a>
 </p>
         <br><button type="submit" id="registerbutton">Register</button>

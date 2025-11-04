@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <title>Who We Are</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/whoWeAre.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo"><img src="images/living-word-christian-church.png.webp" alt="logoweb" id="logoweb"></div>
+    <nav class="menu">
+      <a href="#" class="active">Who We Are</a>
+      <a href="#">Location</a>
+      <a href="#">Minitries</a>
+      <a href="#">Music</a>
+      <a href="#">Videos</a>
+      <a href="#">Events</a>
+      <a href="#">Contact</a>
+      <a id="donate" href="#">Give</a>
+    </nav>
+  </header>
+
+  <!-- Icon area -->
+  <div class="iconbutton">
+    <p class="search"><img src="images/icons8_search_30px.png" alt="search"></p>
+    <button class="cart"><img src="images/icons8_shopping_cart_64px.png" alt="cart"><span>0 VND</span></button>
+    <a class="account" href="account.html"><img src="images/icons8_account_32px_1.png" alt="account"></a>
+  </div>
+
+  <!-- Intro -->
+  <section id="centertext" class="intro">
+    <a class="subtitle">Online BookStore</a>
+    <h1>Living Word eBook - Who We Are</h1>
+    <p class="lead">
+      Chúng tôi là nhóm sinh viên thực hiện dự án Bookstore — phát triển hệ thống bán sách trực tuyến
+      với mục tiêu nâng cao trải nghiệm người dùng, quản lý đơn hàng và giới thiệu tài liệu học tập.
+    </p>
+    <button class="browsebook">Browse Books</button>
+  </section>
+
+  <!-- Team Section -->
+  <section class="team-section">
+    <h1>Thông Tin Nhóm</h1>
+    <p class="team-desc">Trang giới thiệu nhóm thực hiện dự án Bookstore</p>
+
+    <div class="team" role="list">
+      <!-- Member 1 -->
+      <article class="member" role="listitem">
+        <div class="avatar">
+          <!-- default avatar icon -->
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#ffffff" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-4.418 0-8 2.239-8 5v1h16v-1c0-2.761-3.582-5-8-5z"/></svg>
+        </div>
+        <h2>Nguyễn Thái Dương</h2>
+        <p class="meta"><strong>Mã SV:</strong> 682995</p>
+        <p class="meta"><strong>Nhiệm vụ:</strong> FULL STACK + Quản lí chung (nhóm trưởng)</p>
+        <button class="btn-detail" data-member="duong">Xem chi tiết</button>
+      </article>
+
+      <!-- Member 2 -->
+      <article class="member" role="listitem">
+        <div class="avatar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#ffffff" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-4.418 0-8 2.239-8 5v1h16v-1c0-2.761-3.582-5-8-5z"/></svg>
+        </div>
+        <h2>Nguyễn Đình Thành</h2>
+        <p class="meta"><strong>Mã SV:</strong> 687806</p>
+        <p class="meta"><strong>Nhiệm vụ:</strong> Backend</p>
+        <button class="btn-detail" data-member="thanh">Xem chi tiết</button>
+      </article>
+
+      <!-- Member 3 -->
+      <article class="member" role="listitem">
+        <div class="avatar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#ffffff" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-4.418 0-8 2.239-8 5v1h16v-1c0-2.761-3.582-5-8-5z"/></svg>
+        </div>
+        <h2>Nguyễn Quang Minh</h2>
+        <p class="meta"><strong>Mã SV:</strong> 681954</p>
+        <p class="meta"><strong>Nhiệm vụ:</strong> Frontend</p>
+        <button class="btn-detail" data-member="minh">Xem chi tiết</button>
+      </article>
+
+      <!-- Member 4 -->
+      <article class="member" role="listitem">
+        <div class="avatar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#ffffff" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-4.418 0-8 2.239-8 5v1h16v-1c0-2.761-3.582-5-8-5z"/></svg>
+        </div>
+        <h2>Kiều Đăng Nguyên</h2>
+        <p class="meta"><strong>Mã SV:</strong> 683624</p>
+        <p class="meta"><strong>Nhiệm vụ:</strong> Frontend</p>
+        <button class="btn-detail" data-member="nguyen">Xem chi tiết</button>
+      </article>
+    </div>
+
+    <div class="footer-info">
+      <p><strong>Giảng viên hướng dẫn:</strong> Thầy Lê Doãn Phước</p>
+      <p><strong>Lớp:</strong> K68CNTTF - Học Viện Nông Nghiệp Việt Nam</p>
+    </div>
+  </section>
+
+  <!-- Popup templates (hidden initially). Each modal contains CV kiểu "Hồ sơ học tập" -->
+  <!-- DUONG -->
+  <div id="popup-duong" class="popup" aria-hidden="true">
+    <div class="popup-content" role="dialog" aria-labelledby="title-duong">
+      <button class="close" data-close="duong" aria-label="Đóng">&times;</button>
+      <div class="cv-header">
+        <div class="cv-avatar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#ffffff" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-4.418 0-8 2.239-8 5v1h16v-1c0-2.761-3.582-5-8-5z"/></svg>
+        </div>
+        <div class="cv-info">
+          <h2 id="title-duong">Nguyễn Thái Dương</h2>
+          <p class="small"><strong>Mã SV:</strong> 682995</p>
+          <p class="small"><strong>Vai trò:</strong> Full Stack & Nhóm trưởng</p>
+        </div>
+      </div>
+      <hr>
+      <div class="cv-body">
+        <h3>Mục tiêu & Tầm nhìn</h3>
+        <p>Phát triển kỹ năng full-stack, quản lý dự án và hoàn thiện hệ thống Bookstore phục vụ học tập.</p>
+
+        <h3>Kỹ năng chính</h3>
+        <ul>
+          <li>Node.js / Express, C#, .NET (backend)</li>
+          <li>React / Vanilla JS, HTML, CSS (frontend)</li>
+          <li>SQL, NoSQL, REST API, Git, quản lý dự án</li>
+        </ul>
+
+        <h3>Đóng góp trong dự án</h3>
+        <ul>
+          <li>Thiết kế kiến trúc hệ thống và quản lý tiến độ</li>
+          <li>Xây dựng API xử lý sản phẩm, đơn hàng</li>
+          <li>Triển khai môi trường thử nghiệm và khắc phục lỗi</li>
+        </ul>
+
+        <h3>Liên hệ</h3>
+        <p>Email: duong@example.com | SĐT: 0xxxxxxx</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- THANH -->
+  <div id="popup-thanh" class="popup" aria-hidden="true">
+    <div class="popup-content" role="dialog" aria-labelledby="title-thanh">
+      <button class="close" data-close="thanh" aria-label="Đóng">&times;</button>
+      <div class="cv-header">
+        <div class="cv-avatar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#ffffff" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-4.418 0-8 2.239-8 5v1h16v-1c0-2.761-3.582-5-8-5z"/></svg>
+        </div>
+        <div class="cv-info">
+          <h2 id="title-thanh">Nguyễn Đình Thành</h2>
+          <p class="small"><strong>Mã SV:</strong> 687806</p>
+          <p class="small"><strong>Vai trò:</strong> Backend</p>
+        </div>
+      </div>
+      <hr>
+      <div class="cv-body">
+        <h3>Kỹ năng & Công nghệ</h3>
+        <ul>
+          <li>Java, C#, Node.js, REST API</li>
+          <li>Database: MySQL, MongoDB</li>
+          <li>Tối ưu hiệu năng backend, bảo mật API</li>
+        </ul>
+
+        <h3>Đóng góp trong dự án</h3>
+        <ul>
+          <li>Thiết kế và triển khai cơ sở dữ liệu</li>
+          <li>Tối ưu các truy vấn và API liên quan thanh toán</li>
+        </ul>
+
+        <h3>Liên hệ</h3>
+        <p>Email: thanh@example.com | SĐT: 0xxxxxxx</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MINH -->
+  <div id="popup-minh" class="popup" aria-hidden="true">
+    <div class="popup-content" role="dialog" aria-labelledby="title-minh">
+      <button class="close" data-close="minh" aria-label="Đóng">&times;</button>
+      <div class="cv-header">
+        <div class="cv-avatar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#ffffff" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-4.418 0-8 2.239-8 5v1h16v-1c0-2.761-3.582-5-8-5z"/></svg>
+        </div>
+        <div class="cv-info">
+          <h2 id="title-minh">Nguyễn Quang Minh</h2>
+          <p class="small"><strong>Mã SV:</strong> 681954</p>
+          <p class="small"><strong>Vai trò:</strong> Frontend</p>
+        </div>
+      </div>
+      <hr>
+      <div class="cv-body">
+        <h3>Kỹ năng</h3>
+        <ul>
+          <li>HTML, CSS, JavaScript, React</li>
+          <li>Responsive design, UX basics, accessibility</li>
+        </ul>
+
+        <h3>Đóng góp</h3>
+        <ul>
+          <li>Xây dựng giao diện trang chính và trang sản phẩm</li>
+          <li>Tối ưu trải nghiệm mobile và responsive</li>
+        </ul>
+
+        <h3>Liên hệ</h3>
+        <p>Email: minh@example.com | SĐT: 0xxxxxxx</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- NGUYEN -->
+  <div id="popup-nguyen" class="popup" aria-hidden="true">
+    <div class="popup-content" role="dialog" aria-labelledby="title-nguyen">
+      <button class="close" data-close="nguyen" aria-label="Đóng">&times;</button>
+      <div class="cv-header">
+        <div class="cv-avatar">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#ffffff" d="M12 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0 2c-4.418 0-8 2.239-8 5v1h16v-1c0-2.761-3.582-5-8-5z"/></svg>
+        </div>
+        <div class="cv-info">
+          <h2 id="title-nguyen">Kiều Đăng Nguyên</h2>
+          <p class="small"><strong>Mã SV:</strong> 683624</p>
+          <p class="small"><strong>Vai trò:</strong> Frontend</p>
+        </div>
+      </div>
+      <hr>
+      <div class="cv-body">
+        <h3>Kỹ năng</h3>
+        <ul>
+          <li>HTML, CSS, JavaScript</li>
+          <li>Thiết kế giao diện, tối ưu tốc độ trang</li>
+        </ul>
+
+        <h3>Đóng góp</h3>
+        <ul>
+          <li>Thiết kế các component giao diện và cải thiện tốc độ tải trang</li>
+        </ul>
+
+        <h3>Liên hệ</h3>
+        <p>Email: nguyen@example.com | SĐT: 0xxxxxxx</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Script: mở / đóng popup, đóng khi click ngoài -->
+  <script>
+    // mở popup theo data-member của nút
+    document.querySelectorAll('.btn-detail').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const member = this.getAttribute('data-member');
+        const id = 'popup-' + member;
+        const popup = document.getElementById(id);
+        if (popup) {
+          popup.style.display = 'flex';
+          popup.setAttribute('aria-hidden', 'false');
+          document.body.style.overflow = 'hidden'; // khóa scroll khi popup mở
+        }
+      });
+    });
+
+    // nút đóng bên trong popup
+    document.querySelectorAll('.popup .close').forEach(btn => {
+      btn.addEventListener('click', function () {
+        const m = this.getAttribute('data-close');
+        const id = 'popup-' + m;
+        const popup = document.getElementById(id);
+        if (popup) {
+          popup.style.display = 'none';
+          popup.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = ''; // mở lại scroll
+        }
+      });
+    });
+
+    // đóng khi click ra ngoài nội dung popup
+    document.querySelectorAll('.popup').forEach(p => {
+      p.addEventListener('click', function (e) {
+        if (e.target === this) {
+          this.style.display = 'none';
+          this.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+        }
+      });
+    });
+
+    // ESC để đóng popup
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        document.querySelectorAll('.popup').forEach(p => {
+          if (p.style.display === 'flex') {
+            p.style.display = 'none';
+            p.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+          }
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>

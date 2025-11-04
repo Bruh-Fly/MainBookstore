@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Living Word - Trường học</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #121212;
+      color: white;
+    }
+    header {
+      background-color: #1f1f1f;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+    nav {
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .give-button {
+      background-color: #ff9800;
+      color: black;
+      padding: 8px 16px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .breadcrumb {
+      padding: 10px 20px;
+      background-color: #2c2c2c;
+      font-size: 14px;
+    }
+    .map-container {
+      padding: 20px;
+      text-align: center;
+    }
+    iframe {
+      width: 90%;
+      height: 500px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="logo.png" alt="Living Word Logo">
+      <span>LIVING WORD</span>
+    </div>
+    <nav>
+      <a href="#">Who we are</a>
+      <a href="#">Location</a>
+      <a href="#">Ministries</a>
+      <a href="#">Music</a>
+      <a href="#">Videos</a>
+      <a href="#">Events</a>
+      <a href="#">Contact</a>
+      <a href="#" class="give-button">GIVE</a>
+    </nav>
+  </header>
+
+  <div class="breadcrumb">
+    Home > My account
+  </div>
+
+  <div class="map-container">
+    <h2>Địa chỉ của trường</h2>
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3724.123456789!2d105.123456789!3d21.123456789!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135abc123456789%3A0xabcdef123456789!2sTên%20Trường%20Của%20Bạn!5e0!3m2!1svi!2s!4v1234567890123"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+</body>
+</html>

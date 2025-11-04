@@ -1,0 +1,327 @@
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(61, 61, 61);
+    text-decoration: none;
+    color: white;
+    height: 60px;
+    flex-wrap: nowrap;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    list-style: none;
+
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin-left: 50px;
+    white-space: nowrap;
+    font-size: 19px;
+}
+
+.navbar a:hover{
+    cursor: pointer;
+    color: grey;
+    transition: color 0.3s;
+
+}
+.logo {
+   left: 10px;
+    display: flex;
+    height: 50px;
+    position: fixed;
+}
+
+#give {
+    /*font-size: 20px; 
+    border: 1px solid gray;
+    border-radius: 7px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    display: grid ;
+    justify-content: center;
+    align-items: center;
+    border-width: 2px;
+    margin: 10px 10px 10px 50px;
+    height: 35px;
+    width: 50px*/
+    font-size: 19px;
+  font-weight: bold;
+  border: 2px solid gray;
+  border-radius: 7px;
+  padding: 5px 10px;
+  margin-left: 50px;
+  white-space: nowrap;
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  align-self: center;
+  margin-top: 8px;
+  margin-right: 20px;
+  border-radius:  15px;
+}
+
+#give:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s;
+}
+
+body {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5e8e0641bd090219154ef307/1594481740235-5EGQT9DW4BJIJJHQ8657/Untitled+design+%283%29.png');
+    background-repeat: no-repeat;
+    background-size: 1400px 400px;
+}
+
+.main {
+    margin-top: 100px
+}
+
+.firstline {
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: italic;
+    font-style: italic;
+}
+
+.secondline {
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+}
+.thirdline {
+    color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+}
+
+#author {
+      color: white;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    font-style: italic;
+}
+
+p {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 10px;
+    font-weight: 400;
+}
+
+.given {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px
+}
+
+
+#menhgia {
+    color: white;
+    margin-right: 10px;
+}
+#nhapsotien {
+    border-style: none;
+    font-size: 25px;
+    width: 200px;
+    text-align: center;
+    color: white;
+    background-color: rgb(27, 27, 27);
+}
+
+#nhapsotien::placeholder {
+    color: grey;
+}
+
+
+#buttongive {
+    color: white;
+    font-size: 20px;
+    border-style: none;
+    border-radius: 7px;
+    margin-left: 2px;
+    background-color: rgb(43, 117, 43)
+}
+
+.bank {
+    display: flex;
+    gap: 200px;
+    left: 0;
+    justify-content: center;
+    width: 100vw;
+
+}
+
+.allbank {
+        background-color: black;
+        height: 650px;
+
+}
+
+.bank img {
+    margin-top: 90px;
+}
+
+.vietcombank {
+    color: white;
+    
+}
+.mbbank {
+    color: white
+}
+
+.vietinbank {
+    color: white
+}
+.namebank {
+    font-weight: bold;
+    text-align: center;
+}
+
+.name {
+    font-weight: 100;
+    text-align: center;
+}
+.numberbank {
+    font-weight: bold;
+    text-align: center;
+}
+.stk {
+    text-align: center;
+}
+.titlebank {
+    font-weight: bold;
+    text-align: center;
+}
+
+.notebank {
+    text-align: center;
+}
+#vietcombank {
+    width: 200px;
+    height:200px;
+}
+
+#mbbank {
+    width: 200px;
+    height: 200px;
+
+}
+
+#viettinbank {
+    width: 200px;
+    height: 200px;
+}
+
+.centertext {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    font-size: 20px;
+    flex-direction: column;
+    background-image: url('../images/unnamed.png');
+    background-repeat: no-repeat;
+    background-size: 1400px 700px;
+    width: 100%;
+}
+
+.browsebook {
+    height: 40px;
+    width: 200px;
+    background: transparent;
+    color: white;
+    border: 1px solid grey;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+
+.centertext h1 {
+    font-size: 60px
+    
+}
+
+.inforsection {
+    text-align: center;
+    border: solid 2px grey;
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 20px;
+    font-family:Arial, Helvetica, sans-serif;
+
+
+}
+
+#instagram{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.inforsection h3 {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 70px;
+    font-weight: 100;
+    color: white
+}
+
+.socialmedia {
+    gap: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.socialmedia img {
+    height: 30px;
+}
+.khung{
+    border: solid 20px black;
+    border-width: 60px 60px 60px 60px;
+    background-color: black;
+}
+
+.site-footer {
+    color: white;
+    background-color: #222;
+    background:100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+}
+
+.right a {
+    display: flex;
+    justify-content: flex-end;
+    color: rgb(70, 58, 122);
+    text-decoration: none;
+    margin: 0 30px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px
+}
+
+#chonnganhang {
+    color: rgb(230, 217, 217);
+    display: flex;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-left: 30px;
+    
+}

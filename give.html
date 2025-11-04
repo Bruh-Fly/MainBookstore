@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="css/styleforgive.css">
+        <source src="js/taomaQR.js">
+    </head>
+
+    <body>
+        <div>
+        <header class="navbar">
+            <div class="logo">
+                <a href="trangchu.html"><img src="images/living-word-christian-church.png.webp"></a>
+            </div>
+            <nav class="menubar">
+                <a href="#">Who we are</a>
+                <a href="#">Location</a>
+                <a href="#">Minitries</a>
+                <a href="#">Music</a>
+                <a href="#">Videos</a>
+                <a href="#">Events</a>
+                <a href="#">Contact</a>
+                <a href="#" id="give">GIVE</a>
+            </nav>
+        </header>
+        </div>
+
+        <div class="main">
+    <p class="firstline">"Each man should give what he has decided in his</p><p class="secondline">heart to give, not reluctantly or under compulsion, for<p class="thirdline">God loves a cheerful giver."</p>
+    <p id="author">- 2 CORINTHIANS 9:7</p>
+    <div class="given">
+         <p id="menhgia">VND</p>
+        <input type="number" min="0" step="10000" placeholder="Nhập số tiền" id="nhapsotien">
+        <button onclick="taomaQR()" id="buttongive">GIVE</button>
+
+        <div id="maQR"></div>
+    </div>
+    </div>
+
+    <div class="allbank">
+        <div id="chonnganhang">
+    <p >Chọn ngân hàng thanh toán</p>
+    </div>
+    <div class="bank">
+        <div class="vietcombank">
+        <input type="radio"  id="chonvietcombank" value="vietcombank">
+        <img src="https://hienlaptop.com/wp-content/uploads/2024/12/logo-vietcombank-vector-11.png" id="vietcombank" alt="vietcombank">
+        <p class="namebank">Chu Tai Khoan</p>
+        <p class="name">Nguyen Thai Duong</p>
+        <p class="numberbank">So Tai Khoan</p>
+        <p class="stk">9869244182</p>
+        <p class="titlebank">Noi Dung</p>
+        <p class="notebank">Ung ho nha sang tao nho</p>
+        </div>
+
+        <!--Mb bank-->
+        <div class=mbbank>
+        <input type="radio"  id="chonmbbank" value="mbbank">
+        <img src="https://play-lh.googleusercontent.com/o4mfw6DHA8axXmLtcALl32Wm17WhU7m5VGLSVOcgPnTOh9mwpKNnEG9PYcqmP0g7LmELogMKIBr82MoRn-hf=w240-h480-rw" alt="mbbank" id="mbbank">
+        <p class="namebank">Chu Tai Khoan</p>
+        <p class="name">Nguyen Thai Duong</p>
+        <p class="numberbank">So Tai Khoan</p>
+        <p class="stk">0869244182</p>
+        <p class="titlebank">Noi Dung</p>
+        <p class="notebank">Ung ho nha sang tao nho</p>
+        </div>
+
+        <!--Vietinbank-->
+        <div class="vietinbank">
+        <input type="radio"  id="chonvietinbank" value="vietinbank">
+        <img src="https://cdn6.aptoide.com/imgs/1/4/1/14149f338553a1907e0e5eb0d1716cc5_icon.png" alt="viettinbank" id="viettinbank">
+        <p class="namebank">Chu Tai Khoan</p>
+        <p class="name">Nguyen Thai Duong</p>
+        <p class="numberbank">So Tai Khoan</p>
+        <p class="stk">9869244182</p>
+        <p class="titlebank">Noi Dung</p>
+        <p class="notebank">Ung ho nha sang tao nho</p>
+        </div>
+        </div>
+        <p id="note2"><p class="firstline">For Bank Transfer/Deposit or QR Payments,  please send a fund transfer screenshot to office@livingword.ph </p><p class="secondline"> and indicate the recipient of the transfer </p><p class="thirdline">(e.g. tithe, building fund,  pastor, outreach, ministry, etc and other instructions)</p>
+    </div>
+</p>
+        
+        
+    <div class="centertext">
+      <a>Online BookStore</a>
+      <h1>Living Word eBook</h1>
+      <button class="browsebook">Browse Books</button>
+    </div>
+
+     <!--Phan thong tin social-->
+    <div class="khung">
+        <div class="inforsection">
+        <h3>Follow US</h3>
+        <br>
+        <a href="https://www.instagram.com/livingwordts" id="instagram">@livingwordts</a>
+        <div class="socialmedia">
+        <a href="https://www.facebook.com/nguyen.thai.duong.693000"><img src="../images/icons8_facebook_old_26px.png"></a>
+        <a href="https://www.youtube.com"><img src="../images/icons8_youtube_16px.png"></a>
+        <a href="x.com"><img src="../images/icons8_twitter_30px.png"></a>
+        </div>
+        </div>
+        </div>
+        </body>
+
+        <footer class="site-footer">
+            <div class="footer">
+            <div class="left">
+                Copyright &copy 2025 Living Word
+            </div>
+            <div class="right">
+                <a href=#>Policy Private</a>
+            </div>
+            </div>
+        </footer>
+    </body>
+</html>
