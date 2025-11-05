@@ -2,7 +2,6 @@ const express=require('express')
 const mongoose=require('mongoose')
 const path= require('path')
 const port = 3019
-const Cart = require('./models/Cart');
 
 const app = express()
 app.use(express.static(__dirname))
@@ -19,7 +18,6 @@ db.once('open', ()=>{
   console.log('Mongodb connect successful')
 })
 
-const Product = require('./models/productmodels');
 
 app.get('/api/products/:id', async (req, res) => {
   try {
